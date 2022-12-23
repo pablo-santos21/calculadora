@@ -8,27 +8,29 @@ const Calculator = () => {
     <Box m={5}>
       <Container maxWidth="xs">
         <div className="wrapper">
-          <h2>Calculator</h2>
+          <div className="result">
+            <p>0</p>
+          </div>
 
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
-          <button>0</button>
-          <button>,</button>
-          <button>AC</button>
-          <button>+/-</button>
-          <button>%</button>
-          <button>/</button>
-          <button>X</button>
-          <button>-</button>
-          <button>+</button>
-          <button>=</button>
+          <button className="top">AC</button>
+          <button className="top">±</button>
+          <button className="top">%</button>
+          <button className="right">÷</button>
+          <button className="middle">9</button>
+          <button className="middle">8</button>
+          <button className="middle">7</button>
+          <button className="right">X</button>
+          <button className="middle">6</button>
+          <button className="middle">5</button>
+          <button className="middle">4</button>
+          <button className="right">+</button>
+          <button className="middle">3</button>
+          <button className="middle">2</button>
+          <button className="middle">1</button>
+          <button className="right">-</button>
+          <button className="zero">0</button>
+          <button className="middle">,</button>
+          <button className="right">=</button>
         </div>
       </Container>
     </Box>

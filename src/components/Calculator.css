@@ -1,15 +1,12 @@
-h2{
-    color: #fff;
-}
-
+/* MAIN STYLE */
 button{
     width: 3rem;
     height: 3rem;
     font-size: 1.5rem;
     font-weight: bold;
     border: none;
-    border-radius: 50%;
-    margin: .2rem;
+    border-radius: 2rem;
+    margin: .3rem;
 }
 
 button:hover{
@@ -19,5 +16,38 @@ button:hover{
 .wrapper{
     background-color: #000;
     border-radius: 1rem;
+    padding: 1rem;
+    width: 70%;
+    margin: auto;
+}
 
+.result{
+    color: #fff;
+    text-align: right;
+    margin-right: 1.5rem;
+    font-size: 3rem;
+}
+
+
+/* BOTÕES */
+.top{
+    background: #505050;
+}
+
+.right{
+    background: #FF9500;
+    color: #fff;
+}
+
+.middle{
+    background: #1C1C1C;
+    color: #D4D4D2;
+}
+
+.zero{
+    width: 3rem;
+    height: 3rem;
+    width: 38%;
+    background: #1C1C1C;
+    color: #D4D4D2;
 }
