@@ -8,9 +8,9 @@ const Calculator = () => {
   const [num, setNum] = useState(0);
   const [oldNum, setOldNum] = useState();
   const [operator, setOperator] = useState();
-  // OPERAÇÕES MATEMÁTICAS
 
-  function inputNum(e) {
+  // OPERAÇÕES MATEMÁTICAS
+  const inputNum = (e) => {
     let input = e.target.value;
 
     if (num === 0) {
@@ -18,35 +18,35 @@ const Calculator = () => {
     } else {
       setNum(num + input);
     }
-  }
+  };
 
-  function reset(e) {
+  const reset = () => {
     setNum(0);
-  }
+  };
 
-  function percent(e) {
+  const percent = () => {
     setNum(num / 100);
-  }
+  };
 
-  function invert(e) {
+  const invert = () => {
     if (num > 0) {
       setNum(-num);
     } else {
       setNum(Math.abs(num));
     }
-  }
+  };
 
-  function operacoes(e) {
+  const operacoes = (e) => {
     let operacao = e.target.value;
 
     setOperator(operacao);
     setOldNum(num);
     setNum(0);
-  }
+  };
 
-  function calculate(e) {
+  const calculate = (e) => {
     if (operator === '/') {
-      setNum(oldNum / num);
+      setNum((oldNum / num).toLocaleString('pt-BR'));
     } else if (operator === 'x') {
       setNum(oldNum * num);
     } else if (operator === '+') {
@@ -54,7 +54,7 @@ const Calculator = () => {
     } else if (operator === '-') {
       setNum(oldNum - num);
     }
-  }
+  };
 
   // FIM OPERAÇÕES
   return (
@@ -65,61 +65,61 @@ const Calculator = () => {
             <p>{num}</p>
           </div>
 
-          <button className="top" onClick={reset}>
+          <button className="reset" onClick={reset}>
             AC
           </button>
-          <button className="top" onClick={invert}>
+          <button className="reset" onClick={invert}>
             ±
           </button>
-          <button className="top" onClick={percent}>
+          <button className="reset" onClick={percent}>
             %
           </button>
-          <button className="right" onClick={operacoes} value="/">
+          <button className="operators" onClick={operacoes} value="/">
             ÷
           </button>
-          <button className="middle" onClick={inputNum} value={7}>
+          <button className="numbers" onClick={inputNum} value={7}>
             7
           </button>
-          <button className="middle" onClick={inputNum} value={8}>
+          <button className="numbers" onClick={inputNum} value={8}>
             8
           </button>
-          <button className="middle" onClick={inputNum} value={9}>
+          <button className="numbers" onClick={inputNum} value={9}>
             9
           </button>
-          <button className="right" onClick={operacoes} value="x">
-            X
+          <button className="operators" onClick={operacoes} value="x">
+            x
           </button>
-          <button className="middle" onClick={inputNum} value={4}>
+          <button className="numbers" onClick={inputNum} value={4}>
             4
           </button>
-          <button className="middle" onClick={inputNum} value={5}>
+          <button className="numbers" onClick={inputNum} value={5}>
             5
           </button>
-          <button className="middle" onClick={inputNum} value={6}>
+          <button className="numbers" onClick={inputNum} value={6}>
             6
           </button>
-          <button className="right" onClick={operacoes} value="+">
+          <button className="operators" onClick={operacoes} value="+">
             +
           </button>
-          <button className="middle" onClick={inputNum} value={1}>
+          <button className="numbers" onClick={inputNum} value={1}>
             1
           </button>
-          <button className="middle" onClick={inputNum} value={2}>
+          <button className="numbers" onClick={inputNum} value={2}>
             2
           </button>
-          <button className="middle" onClick={inputNum} value={3}>
+          <button className="numbers" onClick={inputNum} value={3}>
             3
           </button>
-          <button className="right" onClick={operacoes} value="-">
+          <button className="operators" onClick={operacoes} value="-">
             -
           </button>
           <button className="zero" onClick={inputNum} value={0}>
             0
           </button>
-          <button className="middle" onClick={inputNum} value={'.'}>
+          <button className="numbers" onClick={inputNum} value={'.'}>
             ,
           </button>
-          <button className="right" onClick={calculate}>
+          <button className="operators" onClick={calculate}>
             =
           </button>
         </div>

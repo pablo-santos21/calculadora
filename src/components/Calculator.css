@@ -30,18 +30,27 @@ button:hover{
 
 
 /* BOTÕES */
-.top{
+.reset{
     background: #505050;
 }
 
-.right{
+.operators{
     background: #FF9500;
     color: #fff;
 }
 
-.middle{
+.operators:focus{
+    background: #FFFFFF;
+    color: #FF9500;
+}
+
+.numbers{
     background: #1C1C1C;
     color: #D4D4D2;
+}
+
+.numbers:focus{
+    background: #929292;
 }
 
 .zero{
@@ -50,4 +59,8 @@ button:hover{
     width: 38%;
     background: #1C1C1C;
     color: #D4D4D2;
+}
+
+.zero:focus{
+    background: #929292;
 }
