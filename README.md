@@ -2,6 +2,9 @@
 
 O app Calculator se trata de uma calculadora simples, com visual clean do iphone. Foi criada para aprimorar meus estudos em React.
 
+![calculadora](https://user-images.githubusercontent.com/35129761/209407422-4c8e4357-3ee4-4ea6-ab9f-ececb1ddfe24.jpg)
+
+
 ## Installation
 
 Construindo e Executando o app Caculator Localmente
