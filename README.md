@@ -1,3 +1,7 @@
+## Projeto rodando
+
+https://projeto-calc-psantos.netlify.app/
+
 ## Sobre o projeto
 
 O app Calculator se trata de uma calculadora simples, com visual clean do iphone. Foi criada para aprimorar meus estudos em React.
